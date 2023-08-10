@@ -1,6 +1,5 @@
 function repetitions(sequence) {
-  let maxCount = 0;
-  let maxItem;
+  let maxCount = 0, maxItem;
   const longest = [];
   for (let i = 0; i < sequence.length; i++) {
     if (i + 1 < sequence.length && sequence[i] == sequence[i + 1])
@@ -13,5 +12,5 @@ function repetitions(sequence) {
   return [maxItem, maxCount + 1];
 }
 
-[item, count] = repetitions("AAGGGTCCCCCTGA");
+const [item, count] = repetitions("AAGGGTCCCCCTGA");
 console.log(item, count);
