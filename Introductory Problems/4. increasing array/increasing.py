@@ -1,7 +1,7 @@
 def increasing_array(size, *arr):
     arr = list(arr)
     moves = 0
-    for i, num in enumerate(range(size-1)):
+    for i, _ in enumerate(range(size-1)):
         if arr[i] > arr[i+1]:
             diff = arr[i] - arr[i+1]
             arr[i+1] += diff

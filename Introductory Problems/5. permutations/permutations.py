@@ -6,9 +6,9 @@ def permutation(n):
         if n % 2 != 0:
             a = odd_array[-1]
             b = odd_array[0]
-            a = a ^ b
-            b = a ^ b
-            a = a ^ b
+            temp = a
+            a = b
+            b = temp
             even_array.reverse()
             even_array.extend(odd_array)
             return even_array
