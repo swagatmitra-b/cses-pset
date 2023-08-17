@@ -6,7 +6,7 @@ def customers(size, *times):
         for j in range(i+1, size): 
             start2, end2 = times[j]
             if start1 < end2 and end1> start2:
-                tracker.append(i);
+                tracker.append(i)
                 tracker.append(j)
     for i in tracker: 
         freq = tracker.count(i)

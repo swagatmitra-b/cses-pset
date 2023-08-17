@@ -5,9 +5,9 @@ function twoSets(n) {
   const arraySum = fullArray.reduce((acc, curr) => curr + acc, 0);
   if (arraySum % 2 != 0) return "NO";
   else {
-    console.log("YES")
+    console.log("YES");
     let midValue = arraySum / 2;
-    for (let i = 0; i < fullArray.length; i++) {
+    for (let i = 0; i < n; i++) {
       if (fullArray[i] <= midValue) {
         set1.push(fullArray[i]);
         midValue -= fullArray[i];
